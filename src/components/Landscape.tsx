@@ -121,7 +121,7 @@ export function Landscape() {
     >
       <div className="land">
         <figure className="land__plot">
-          <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Peak compute versus total-dose tolerance of space processors">
+          <svg viewBox={`0 0 ${W} ${H}`} role="group" aria-label="Peak compute versus total-dose tolerance of space processors">
             <rect x={px(10000)} y={py(2000)} width={px(1e6) - px(10000)} height={py(100) - py(2000)} className="land__gap" />
             <text x={px(12000)} y={py(1500)} className="svg-l svg-l--halo">
               THE GAP

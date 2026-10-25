@@ -6,7 +6,9 @@
 
 **Radiation-hardened AI chips for orbit: an interactive thesis, live fault-injection arena and mission radiation planner.**
 
-![HALO Orbital hero](docs/screenshots/hero.png)
+[**Live site →**](https://samar403.github.io/Electronics-in-space/)
+
+![HALO Orbital hero](docs/screenshots/hero.jpg)
 
 </div>
 
@@ -56,8 +58,8 @@ Read the full **[investment thesis](docs/THESIS.md)**, the **[original brief](do
 | 08 | **Criteria** | The standards for qualification: TM1019, JESD57/234/89, ESCC, ECSS-Q-ST-60-15C, QML-V/Y, ASTM E595, GEVS, SpaceWire/SpaceFibre, VITA 78 |
 | 09 | **The company** | Segments, business model, roadmap, risks |
 
-![Bit Arena](docs/screenshots/arena.png)
-![Mission planner](docs/screenshots/planner.png)
+![Bit Arena](docs/screenshots/arena.jpg)
+![Mission planner](docs/screenshots/planner.jpg)
 
 ## Run it
 
@@ -71,9 +73,11 @@ npm run build      # static build in dist/
 Requires Node 18+. No backend and no tracking; everything runs in the browser.
 
 ### Deploy
-`.github/workflows/ci.yml` type-checks, tests and builds on every push. On `main` it deploys to
-**GitHub Pages**: enable it once under *Settings → Pages → Source: GitHub Actions*. The build uses a relative
-base, so `dist/` also works on any static host (Netlify, Vercel, S3).
+`.github/workflows/ci.yml` type-checks, tests and builds on every push and pull request. Pushes to the
+repository's default branch deploy to **GitHub Pages** at
+<https://samar403.github.io/Electronics-in-space/>. The workflow tries to enable Pages itself; if it can't,
+enable it once under *Settings → Pages → Source: GitHub Actions* and re-run the workflow. The build uses a
+relative base, so `dist/` also works on any static host (Netlify, Vercel, S3).
 
 ## Project structure
 

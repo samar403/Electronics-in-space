@@ -1017,6 +1017,7 @@ input[type='range']::-moz-range-thumb {
 }
 
 .card {
+  min-width: 0;
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -1412,10 +1413,11 @@ input[type='range']::-moz-range-thumb {
 }
 .arena__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 20px;
 }
 .arena__side {
+  min-width: 0;
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 18px;
@@ -2400,7 +2402,7 @@ input[type='range']::-moz-range-thumb {
     grid-template-columns: 1fr 1fr;
   }
   .arena__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
